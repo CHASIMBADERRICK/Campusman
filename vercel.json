@@ -1,13 +1,13 @@
 {
     "builds" : [{
-        "src": "campusman/wsgi.py",
+        "src": "campusman/asgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize" : "15mb", "runtime": "python3.13.2"}
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "campusman/wsgi.py"
+            "dest": "campusman/asgi.py"
         }
     ]
 }
